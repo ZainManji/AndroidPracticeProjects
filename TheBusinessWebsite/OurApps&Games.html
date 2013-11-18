@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Apps & Games | The Business</title>
+	<meta charset="utf-8" />
+	<meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+	<link rel="stylesheet" href="css/fixed-navigation.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/default.js"></script>
+	<script type="text/javascript"
+	    src="https://maps.google.com/maps/api/js?sensor=false">
+	</script>
+	<script type="text/javascript">
+	  function initialize() {
+	    var latlng = new google.maps.LatLng(-34.397, 150.644);
+	    var myOptions = {
+	      zoom: 8,
+	      center: latlng,
+	      mapTypeId: google.maps.MapTypeId.ROADMAP
+	    };
+	    var map = new google.maps.Map(document.getElementById("map_canvas"),
+	        myOptions);
+	  }
+
+	</script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body onload="initialize()">
+	<div id="pagewidth">
+		<header id="header">
+			<div class="center">
+				<nav id="mainNav">
+					<ul>
+						<li><a href="homepage.html"><span>Home</span></a></li>
+						<li><a href="#twoColumnLayout"><span>About Us</span></a></li>
+						<li class="active"><a href="OurApps&Games.html"><span>Our Apps & Games</span></a></li>
+						<li><a href="#boxes"><span>Future Developments</span></a></li>
+						<li><a href="contact-us.html"><span>Contact us</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="content">
+			<section id="boxes" class="row grey">
+				<div class="center">
+					<h1>Our Apps & Games</h1>
+					<strong class="subHeading">Our self-created, favourite games & applications</strong>
+					<div class="columns">
+						<article class="news oneThird">
+							<div>
+								<h3><a href="#">Circle Game</a></h3>
+								<div class="content">
+									<a href="#" class="imgHolder fullWidth"><img src="img/img-news01.jpg" alt="" /></a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+								<div class="readMore"><a href="CircleGamePage.html" class="btn btnSmall"><span>Read More</span></a></div>
+							</div>
+						</article>
+						<article class="news oneThird">
+							<div>
+								<h3><a href="#">Chansey Game</a></h3>
+								<div class="content">
+									<a href="#" class="imgHolder fullWidth"><img src="img/img-news01.jpg" alt="" /></a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+								<div class="readMore"><a href="#" class="btn btnSmall"><span>Read More</span></a></div>
+							</div>
+						</article>
+						<article class="news oneThird">
+							<div>
+								<h3><a href="#">Minute Math Game</a></h3>
+								<div class="content">
+									<a href="#" class="imgHolder fullWidth"><img src="img/img-news01.jpg" alt="" /></a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+								<div class="readMore"><a href="#" class="btn btnSmall"><span>Read More</span></a></div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer id="footer">
+			<div class="center">
+				<span class="copy">Created by The Business</span>
+				Follow us on <a href="https://twitter.com/">Twitter</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

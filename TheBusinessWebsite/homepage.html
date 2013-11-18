@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home | The Business</title>
+	<meta charset="utf-8" />
+	<meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+	<link rel="stylesheet" href="css/fixed-navigation.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/default.js"></script>
+	<script type="text/javascript"
+	    src="https://maps.google.com/maps/api/js?sensor=false">
+	</script>
+	<script type="text/javascript">
+	  function initialize() {
+	    var latlng = new google.maps.LatLng(-34.397, 150.644);
+	    var myOptions = {
+	      zoom: 8,
+	      center: latlng,
+	      mapTypeId: google.maps.MapTypeId.ROADMAP
+	    };
+	    var map = new google.maps.Map(document.getElementById("map_canvas"),
+	        myOptions);
+	  }
+
+	</script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<body onload="initialize()">
+	<div id="pagewidth">
+		<header id="header">
+			<div class="center">
+				<nav id="mainNav">
+					<ul>
+						<li class="active"><a href="homepage.html"><span>Home</span></a></li>
+						<li><a href="#"><span>About Us</span></a></li>
+						<li><a href="OurApps&Games.html"><span>Our Apps & Games</span></a></li>
+						<li><a href="#"><span>Future Developments</span></a></li>
+						<li><a href="contact-us.html"><span>Contact us</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="content">
+			<section class="row">
+				<div class="center">
+					<h1>The Business</h1>
+					<strong class="subHeading">Mobile App & Game Development Corporation</strong>
+					<div class="gallery">
+						<ul class="slides">
+							<li><img src="img/img-gallery.jpg" alt="image" /></li>
+							<li><img src="img/img-gallery2.jpg" alt="image" /></li>
+							<li><img src="img/img-gallery3.jpg" alt="image" /></li>
+						</ul>
+					</div>
+					<div class="buttons">
+						<a href="homepage.html" class="btn btnGreen"><span>Download Game Button?</span></a>
+						<span><em>or</em></span>
+						<a href="OurApps&Games.html" class="btn btnBlue"><span>View Our Products?</span></a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer id="footer">
+			<div class="center">
+				<span class="copy">Created by The Business</span>
+				Follow us on <a href="https://twitter.com">Twitter</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

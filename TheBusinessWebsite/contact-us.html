@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us | The Business</title>
+	<meta charset="utf-8" />
+	<meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+	<link rel="stylesheet" href="css/fixed-navigation.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/default.js"></script>
+	<script type="text/javascript"
+	    src="https://maps.google.com/maps/api/js?sensor=false">
+	</script>
+	<script type="text/javascript">
+	  function initialize() {
+	    var latlng = new google.maps.LatLng(43.6525, -79.38166);
+	    var myOptions = {
+	      zoom: 8,
+	      center: latlng,
+	      mapTypeId: google.maps.MapTypeId.ROADMAP
+	    };
+	    var map = new google.maps.Map(document.getElementById("map_canvas"),
+	        myOptions);
+	  }
+
+	</script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body onload="initialize()">
+	<div id="pagewidth">
+		<header id="header">
+			<div class="center">
+				<nav id="mainNav">
+					<ul>
+						<li><a href="homepage.html"><span>Home</span></a></li>
+						<li><a href="#"><span>About Us</span></a></li>
+						<li><a href="OurApps&Games.html"><span>Our Apps & Games</span></a></li>
+						<li><a href="#"><span>Future Developments</span></a></li>
+						<li class="active"><a href="contact-us.html"><span>Contact us</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="content">
+			<section id="contactUs" class="row grey">
+				<div class="center">
+					<h1>Contact Us</h1>
+					<strong class="subHeading">Please inform us of any general business inquiries, application questions, or bug reports</strong>
+					<div class="columns">
+						<div class="half">
+							<form method="post" action="contact.php" class="form contact-form">
+								<fieldset>
+									<h2>Feedback form</h2>
+									<div id="message"></div>
+									<div class="formRow">
+										<div class="textField"><input type="text" name="contact-name" id="name" placeholder="Your name ..." /></div>	
+									</div>
+									<div class="formRow">
+										<div class="textField"><input type="text" name="contact-email" id="email" placeholder="Your Email ..." /></div>
+									</div>
+									<div class="formRow">
+										<div class="textField"><textarea cols="20" name="contact-comment" id="comment" rows="4" placeholder="Your Comment ..."></textarea></div>
+									</div>
+									<div class="formRow">
+										<button class="btnSmall btn submit right">
+											<span>Send Message</span>
+										</button>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="half">
+							<h2>How to find us</h2>
+							<div id="map">
+								<div class="imgHolder"><div id="map_canvas" style="width:445px; height:392px"></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer id="footer">
+			<div class="center">
+				<span class="copy">Created by The Business</span>
+				Follow us on <a href="https://twitter.com">Twitter</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
